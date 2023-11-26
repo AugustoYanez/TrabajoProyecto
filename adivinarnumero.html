@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="/css/styleadivinar.css">
+</head>
+<body>
+
+    <a href="juego.html" id="volverArribaBtn">&#8592; Volver al menu. </a>
+
+<div id="contenedor">
+    <div id="app">
+        <h1> ¡TE ADIVINO EL NUMERO!</h1>
+
+        <label for="numeroUsuario">Ingresa un número del 1 al 255:</label>
+        <input type="number" id="numeroUsuario" min="1" max="255">
+
+        <button id="iniciarButton">Empezar</button>
+
+        <div id="carrusel"></div>
+
+        <p id="resultado"></p>
+
+        <button id="siButton" style="display: none;">SI</button>
+        <button id="noButton" style="display: none;">NO</button>
+
+        <button id="volverAJugarButton" style="display: none;">Volver a Jugar</button>
+    </div>
+</div>
+
+<script src="/script/adivinar.js"></script>
+
+</body>
+</html>

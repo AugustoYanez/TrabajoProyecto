@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'colvetica';
+    src: url('/assets/fonts/coolvetica/coolvetica-rg.ttf') format('truetype'); 
+}
+
+
+
+.info-item {
+    font-size: 24px; /* Tamaño de fuente grande */
+    color: white; /* Texto en blanco */
+    display: block; /* Hacer que el temporizador sea un bloque para alinearlo abajo */
+    margin-top: 10px; /* Espacio en la parte superior para separarlo del texto anterior */
+}
+
+
+.tempo4 {
+    font-family: 'colvetica';
+    padding-top: 40px;
+    padding-right: 100px;
+    font-size: 34px; /* Tamaño de fuente grande */
+    color: rgb(255, 255, 255); /* Texto en blanco */
+    display: block; /* Hacer que el temporizador sea un bloque para alinearlo abajo */
+    margin-top: 10px; /* Espacio en la parte superior para separarlo del texto anterior */
+}
+.timer-text {
+    background-color: black;
+    margin: 0px;
+    font-size: 40px; /* Tamaño de fuente grande */
+    color: rgb(255, 255, 255); /* Texto en blanco */
+    display: block; /* Hacer que el temporizador sea un bloque para alinearlo abajo */
+    margin-top: 10px; /* Espacio en la parte superior para separarlo del texto anterior */
+}

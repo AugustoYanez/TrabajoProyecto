@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'colvetica';
+    src: url('/assets/fonts/coolvetica/coolvetica-rg.ttf') format('truetype'); 
+}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  background-image: url(/assets/img/fondocartascasual.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+}
+
+.info-item {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.tempo4 {
+
+  text-align: center;
+
+
+}
+
+
+
+
+#listoButton:hover {
+    background-color: #0679f5; /* Cambiar color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+}
+
+#listoButton:disabled {
+    background-color: #ccc; /* Color de fondo cuando está deshabilitado */
+    cursor: not-allowed; /* Cambiar cursor cuando está deshabilitado */
+}
+#listoButton {
+
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    border-radius: 5px ;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px; /* Tamaño de fuente */
+    background-color: #02172e; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Estilo para el botón "Empezar" */
+#startButton {
+    
+    border-radius: 15px ;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para las cartas */
+.cards {
+    margin-top: 0px;
+   padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Escalar la carta al 110% del tamaño original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar una sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar transiciones suaves */
+}
+
+.card-value {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    text-align: center;
+   border-radius: 10px;
+background-color: #e6e3e3;
+font-size:20px;
+
+}
+.card img {
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.card.selected img {
+    border-color: blue;
+}
+
+
+.crondas {
+font-size: 30px;
+    padding: 30px;
+    font-family: colvetica;
+
+}
+
+#score, #roundCount, #numberToGuess {
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: "Arial", sans-serif; /* Cambia la fuente a "Arial" y, si no se encuentra, usa fuentes genéricas sans-serif */
+    font-size: 40px; /* Tamaño de fuente */
+    color: #ffffff; /* Texto en un tono de gris oscuro */
+    padding: 5px; /* Añade espacio alrededor del contenido */
+    
+}
+
+
+
+#result {
+    border-radius: 10px;
+    background-color: #000000; /* Fondo oscuro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 700px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para el mensaje de victoria */
+#result.win-message {
+    color: #28a745 !important; /* Verde para victoria */
+}
+
+/* Estilo para el mensaje de derrota */
+#result.lose-message {
+    color: #dc3545 !important; /* Rojo para derrota */
+}
+
+
+#volverArribaBtn {
+    margin-top: 300px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#volverArribaBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+@keyframes slideFromRight {
+    to {
+        right: 0;
+    }
+}
+

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/fondoadivinar.jpg');
+}
+
+#contenedor {
+    margin-top: 60px;
+    background-color: white; /* Fondo blanco */
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%; /* Aumento del tamaño al 40% */
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+#numeroUsuario {
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#siButton {
+    background-color: green; /* Color verde */
+    color: #fff;
+}
+
+#noButton {
+    background-color: red; /* Color rojo */
+    color: #fff;
+}
+
+#carrusel img {
+    width: 300px;
+    margin: 10px;
+}
+
+#resultado {
+    font-size: 24px; /* Aumentar el tamaño del texto */
+    margin-top: 20px; /* Mayor espacio superior */
+    padding: 10px; /* Añadir espacio interno */
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+#volverArribaBtn {
+    margin-top: 300px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#volverArribaBtn:hover {
+    background-color: #0056b3;
+}

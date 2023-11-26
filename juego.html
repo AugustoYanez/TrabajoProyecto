@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Matematica Santiago Fiore</title>
+    <link rel="icon" href="/assets/img/logofiore.ico" type="image/x-icon">
+
+    <script src="/script/script.js"></script>
+    
+</head>
+<body>
+    <header>
+        
+
+<nav class="navbar navbar-expand-lg navbarmio" >
+  <div class="container-fluid">
+    <a   class="navbar-brand" href="https://sites.google.com/view/santiago-fiore/portada">
+    <img src="/assets/img/logofiore.png " class="logo-img" width="100px" alt=""> 
+    Matematica Santiago Fiore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://sites.google.com/view/santiago-fiore/portada"> Pagina principal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://sites.google.com/view/santiago-fiore/juegos?authuser=0 "> Otros Juegos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="comoJugarLink"> Como Jugar</a>
+        </li>        
+          </ul>
+      
+    </div>
+  </div>
+</nav>
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <p>
+        • Para jugar este juego, habrán 11 cartas, las que iran desde 2⁰
+        hasta 2¹⁰. <br>
+        • El juego se juega por turnos. Por cada turno, un jugador tendrá que seleccionar un numero de 1 a 2047.<br>
+        • El juego consiste en tratar de adivinar el numero seleccionado anteriormente, ya sea
+        por otro jugador o por la IA. <br>
+        • Se contaran con 30 segundos para tratar de adivinar el número, en los que habrá
+         un sistema de puntuación tal que:<br>
+             cada vez que se adivine el numero, se sumará un punto, y cada vez que no, no se sumará nada.<br>
+        • Para adivinar un numero hay que dar vuelta algunas de las 11 cartas que sumadas, dan
+        el numero seleccionado. <br>
+
+        <img src="/assets/img/Cartas/11cartas.png" class="img-reglas" width="300px" alt="">
+<br>
+        • Supongamos que se eligió el numero 132. Para construirlo a binario, tendriamos que usar las cartas:
+        <br>
+      <img src="/assets/img/Cartas/Numero/7.png"  width="30px" alt="">
+
+        <img src="/assets/img/Cartas/Numero/2.png" width="30px"alt="">
+        <br>
+        • Ya que la carta numero 7 representa 2⁷ = 128 +  la carta numero 2 representa 2² = 4
+        <br>
+        • Nos queda 128 + 4 = 132
+        <br>
+        • Si logramos hacer esto en menos de 30 segundos, sumaremos un punto. De lo contrario, nada.
+      
+   
+      </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+        
+    </header>
+    <main>
+        <div class="menu">
+            <div class="button-container">
+              <a href="casual.html">
+                <button class="single-player-btn">Un Jugador</button>
+              
+               <a href="adivinarnumero.html">
+                <button class="two-players-btn"> Adivinar Numero</button>
+              </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
